@@ -578,4 +578,142 @@ select:focus {
         gap: 1rem;
     }
 }
- 
+
+/* ============================================
+   ADDITIONAL STYLES FOR ABOUT & CONTACT PAGES
+   Add this to your theme.css file
+   ============================================ */
+
+/* Content Shell for internal pages */
+.content-shell {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: var(--glow-primary);
+}
+
+/* About Sections */
+.about-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--color-surface);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.section-heading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.5rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 1.25rem;
+}
+
+.founder-intro {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(106, 0, 255, 0.1);
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+/* Founder Message specific styling */
+.founder-message {
+    background: linear-gradient(135deg, rgba(17, 191, 231, 0.05), rgba(106, 0, 255, 0.05));
+    border: 2px solid var(--color-primary);
+}
+
+/* Contact Page Styling */
+.contact-content {
+    padding: 0 1rem;
+}
+
+.contact-intro {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-primary);
+    border-color: var(--color-primary);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.contact-note {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-top: 3rem;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+    }
+}
