@@ -52,7 +52,7 @@
         </p>
 
         <a href="https://github.com/mercurycrest/my-trading-dashboard/releases/download/v1.0.0/Crypto_Options_Setup.exe" class="cta-button home-cta">
-  Try Crypto Options Monitor
+  Try Crypto Options Monitor App for FREE
 </a>
         <!-- Quote box -->
         <div class="quote-box">
@@ -98,5 +98,19 @@
       </footer>
     </section>
   </main>
+
+  <script>
+    // Handle navigation for pages under construction
+    document.addEventListener('DOMContentLoaded', function() {
+      const workInProgressLinks = document.querySelectorAll('a[href="options.html"], a[href="signals.html"], a[href="contact.html"]');
+
+      workInProgressLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('Working on it! This page is currently under construction. Please check back soon.');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
